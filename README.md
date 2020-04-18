@@ -1,4 +1,4 @@
-A lightweight library that applies a class to an element only when it is focued by tabbing.
+A lightweight library that applies a class to an element only when it is focused by tabbing.
 
 **[Try the demo](maxmaeder.github.io/keyboard-focus)**
 
@@ -14,7 +14,7 @@ Perfect for showing users who use keyboard navigation what element they've focus
 </html>
 ```
 ### 2. Update your CSS
-Create a css rule-set with the `.keyboardFocus` selector and whatever styles you want to be applied when to an element when it is focued by tabbing.
+Create a css rule-set with the `.keyboardFocus` selector and whatever styles you want to be applied when to an element when it is focused by tabbing.
 ```css
 .keyboardFocus {
   outline: 1px solid black;
