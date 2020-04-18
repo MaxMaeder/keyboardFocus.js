@@ -1,6 +1,6 @@
 A lightweight library that applies a class to an element only when it is focused by tabbing.
 
-**[Try the demo](maxmaeder.github.io/keyboard-focus)**
+**[Try the demo](https://maxmaeder.github.io/keyboard-focus)**
 
 ## Use cases
 Perfect for showing users who use keyboard navigation what element they've focused, while not altering the experience for other users.
