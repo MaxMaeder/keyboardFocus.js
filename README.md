@@ -1,6 +1,8 @@
+# keyboardFocus.js
+
 A lightweight library that applies a class to an element only when it is focused by tabbing.
 
-**[Try the demo](https://maxmaeder.github.io/keyboard-focus)**
+**[Try the demo](https://maxmaeder.github.io/keyboardFocus.js)**
 
 ## Use cases
 Perfect for showing users who use keyboard navigation what element they've focused, while not altering the experience for other users.
@@ -9,7 +11,7 @@ Perfect for showing users who use keyboard navigation what element they've focus
 ### 1. Add the script to your page
 ```html
       ...
-    <script src="/keyboard-focus.js"></script>
+    <script src="/keyboardFocus.js"></script>
   </body>
 </html>
 ```
