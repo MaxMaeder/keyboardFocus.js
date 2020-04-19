@@ -1,0 +1,66 @@
+<!DOCTYPE html><html lang="en">
+  <head>
+
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif !important;
+      }
+      body {
+        box-sizing: border-box;
+        padding: 10px;
+      }
+      body > * {
+        display: block;
+      }
+      input, select, button {
+        margin: 10px;
+        border-radius: 5px;
+        border: 1px solid black;
+      }
+
+      *:focus {
+        outline: none;
+      }
+      .keyboardFocused {
+        outline: 3px dashed red;
+      }
+    </style>
+
+    <script>
+      // Add event listener for when tab pressed
+      document.addEventListener("keyup", function(event) {
+        if (event.keyCode !== 9) return;
+
+        removeFocusedClass();
+
+        // Add the "keyboardFocused" class to the currently focused element
+        document.activeElement.classList.add("keyboardFocused");
+      });
+
+      // Remove the class when the user interacts with the page with their mouse, or when the page looses focus
+      document.addEventListener("click", removeFocusedClass);
+      document.addEventListener("focusout", removeFocusedClass);
+
+      // Remove the "keyboardFocused" class from any elements that have it
+      function removeFocusedClass() {
+        var previouslyFocusedElement = document.getElementsByClassName("keyboardFocused") [0];
+        if (previouslyFocusedElement) previouslyFocusedElement.classList.remove("keyboardFocused");
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" placeholder="Name...">
+
+    <select>
+      <option selected disabled>Gender...</option>
+      <option>Male</option>
+      <option>Female</option>
+      <option>Other</option>
+    </select>
+
+    <label for="checkbox">Spam me with emails</label>
+    <input id="checkbox" type="checkbox">
+
+    <button>Submit</button>
+  </body>
+</html>

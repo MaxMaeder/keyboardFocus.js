@@ -1,0 +1,41 @@
+<!DOCTYPE html><html lang="en">
+  <head>
+
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif !important;
+      }
+      body {
+        box-sizing: border-box;
+        padding: 10px;
+      }
+      body > * {
+        display: block;
+      }
+      input, select, button {
+        margin: 10px;
+        border-radius: 5px;
+        border: 1px solid black;
+      }
+
+      *:focus {
+        outline: 3px dashed red;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" placeholder="Name...">
+
+    <select>
+      <option selected disabled>Gender...</option>
+      <option>Male</option>
+      <option>Female</option>
+      <option>Other</option>
+    </select>
+
+    <label for="checkbox">Spam me with emails</label>
+    <input id="checkbox" type="checkbox">
+
+    <button>Submit</button>
+  </body>
+</html>
