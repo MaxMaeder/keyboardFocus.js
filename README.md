@@ -20,4 +20,4 @@ Create a css rule-set with the `.keyboardFocus` selector and whatever styles you
   outline: 1px solid black;
 }
 ```
-3. Sit back, you're done!
+### 3. Sit back, you're done!
