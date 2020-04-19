@@ -14,7 +14,7 @@ Perfect for showing users who use keyboard navigation what element they've focus
 </html>
 ```
 ### 2. Update your CSS
-Create a css rule-set with the `.keyboardFocus` selector and whatever styles you want to be applied when to an element when it is focused by tabbing.
+Create a css rule-set with the `.keyboardFocus` selector and whatever styles you want to be applied to an element when it is focused by tabbing.
 ```css
 .keyboardFocus {
   outline: 1px solid black;
