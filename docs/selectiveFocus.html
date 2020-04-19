@@ -9,11 +9,15 @@
         box-sizing: border-box;
         padding: 10px;
       }
-      body > * {
-        display: block;
+      body > *:not(#checkbox) {
         margin: 10px;
+        display: block;
+      }
+      #checkbox {
+        margin: 0 10px;
       }
       input, select, button {
+        background: white;
         border-radius: 5px;
         border: 1px solid black;
       }
@@ -58,8 +62,7 @@
       <option>Other</option>
     </select>
 
-    <label for="checkbox">Spam me with emails</label>
-    <input id="checkbox" type="checkbox">
+    <label for="checkbox">Spam me with emails<input id="checkbox" type="checkbox"></label>
 
     <button>Submit</button>
   </body>
